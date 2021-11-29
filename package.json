@@ -1,0 +1,19 @@
+{
+  "name": "laderriere-my-exercices",
+  "version": "0.1.0",
+  "description": "NodeJS course",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDydymaxx/laderriere-my-exercices.git"
+  },
+  "author": "Dylan LADERRIERE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrDydymaxx/laderriere-my-exercices/issues"
+  },
+  "homepage": "https://github.com/MrDydymaxx/laderriere-my-exercices#readme"
+}
