@@ -2,6 +2,7 @@ const assert = require('chai').assert;
 const my_sum = require('../day-1/exercise-0').my_sum;
 const my_display_alpha = require('../day-1/exercise-1').my_display_alpha;
 const my_display_alpha_reverse = require('../day-1/exercise-2').my_display_alpha_reverse;
+const my_alpha_number = require('../day-1/exercise-3').my_alpha_number;
 
 describe('Day 1 - Exercise 0', function(){
     it('my_sum should return 7', function() {
@@ -34,4 +35,13 @@ describe('Day 1 - Exercise 2', function(){
     it('my_display_alpha should be string type', function(){
         assert.typeOf(my_display_alpha_reverse(),'string');
     });
+});
+
+describe('Day 1 - Exercise 3', function() {
+    it('my_alpha_number should return "8"', function(){
+        assert.equal(my_alpha_number(8),"8");
+    });
+    it('my_alpha_number should return a string type', function(){
+        assert.typeOf(my_alpha_number(8),'string')
+    })
 });
