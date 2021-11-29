@@ -1,6 +1,6 @@
 {
   "name": "laderriere-my-exercices",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "NodeJS course",
   "main": "index.js",
   "scripts": {
