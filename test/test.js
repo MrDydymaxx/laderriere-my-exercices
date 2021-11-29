@@ -1,8 +1,9 @@
 const assert = require('chai').assert;
 const my_sum = require('../day-1/exercise-0').my_sum;
 const my_display_alpha = require('../day-1/exercise-1').my_display_alpha;
+const my_display_alpha_reverse = require('../day-1/exercise-2').my_display_alpha_reverse;
 
-describe('Day 1 - Exercise 1', function(){
+describe('Day 1 - Exercise 0', function(){
     it('my_sum should return 7', function() {
         assert.equal(my_sum(3,4),7);
     });
@@ -17,11 +18,20 @@ describe('Day 1 - Exercise 1', function(){
     });
 });
 
-describe('Day 1 - Exercise 2', function(){
+describe('Day 1 - Exercise 1', function(){
     it('my_display_alpha should return abcdefghijklmnopqrstuvwxyz', function(){
         assert.equal(my_display_alpha(),'abcdefghijklmnopqrstuvwxyz');
     });
     it('my_display_alpha should be string type', function(){
         assert.typeOf(my_display_alpha(),'string');
+    });
+});
+
+describe('Day 1 - Exercise 2', function(){
+    it('my_display_alpha_reverse should return zyxwvutsrqponmlkjihgfedcba', function(){
+        assert.equal(my_display_alpha_reverse(),'zyxwvutsrqponmlkjihgfedcba');
+    });
+    it('my_display_alpha should be string type', function(){
+        assert.typeOf(my_display_alpha_reverse(),'string');
     });
 });
