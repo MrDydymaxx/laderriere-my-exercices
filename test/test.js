@@ -6,6 +6,7 @@ const my_alpha_number = require('../day-1/exercise-3').my_alpha_number;
 const my_size_alpha = require('../day-1/exercise-4').my_size_alpha;
 const my_array_alpha = require('../day-1/exercise-5').my_array_alpha;
 const my_length_array = require('../day-1/exercise-6').my_length_array;
+const my_is_posi_neg = require('../day-1/exercise-7').my_is_posi_neg;
 
 describe('Day 1 - Exercise 0', function(){
     it('my_sum should return 7', function() {
@@ -76,5 +77,23 @@ describe('Day 1 - Exercise 6', function() {
     });
     it('my_length_array should return a number type', function(){
         assert.typeOf(my_length_array(['p','a','n','d','a']),'number')
+    });
+});
+
+describe('Day 1 - Exercise 7', function() {
+    it('my_is_posi_neg should return POSITIF', function(){
+        assert.equal(my_is_posi_neg(8),'POSITIF');
+    });
+    it('my_is_posi_neg should return POSITIF (null)', function(){
+        assert.equal(my_is_posi_neg(null),'POSITIF');
+    });
+    it('my_is_posi_neg should return POSITIF (undefined)', function(){
+        assert.equal(my_is_posi_neg(undefined),'POSITIF');
+    });
+    it('my_is_posi_neg should return NEGATIF', function(){
+        assert.equal(my_is_posi_neg(-6),'NEGATIF');
+    });
+    it('my_is_posi_neg should return NEUTRAL', function(){
+        assert.equal(my_is_posi_neg(0),'NEUTRAL');
     });
 });
