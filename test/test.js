@@ -5,6 +5,7 @@ const my_display_alpha_reverse = require('../day-1/exercise-2').my_display_alpha
 const my_alpha_number = require('../day-1/exercise-3').my_alpha_number;
 const my_size_alpha = require('../day-1/exercise-4').my_size_alpha;
 const my_array_alpha = require('../day-1/exercise-5').my_array_alpha;
+const my_length_array = require('../day-1/exercise-6').my_length_array;
 
 describe('Day 1 - Exercise 0', function(){
     it('my_sum should return 7', function() {
@@ -64,7 +65,16 @@ describe('Day 1 - Exercise 5', function() {
     it('my_array_alpha should return an array', function(){
         assert.isArray(my_array_alpha('panda'));
     });
-    it('my_size_alpha should return ["p,"a","n","d","a"]', function(){
+    it('my_array_alpha should return ["p,"a","n","d","a"]', function(){
         assert.deepEqual(my_array_alpha('panda'), ['p','a','n','d','a']);
+    });
+});
+
+describe('Day 1 - Exercise 6', function() {
+    it('my_length_array should return 5', function(){
+        assert.equal(my_length_array(['p','a','n','d','a']),5);
+    });
+    it('my_length_array should return a number type', function(){
+        assert.typeOf(my_length_array(['p','a','n','d','a']),'number')
     });
 });
